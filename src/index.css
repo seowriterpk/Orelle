@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-gold: #D4AF37;
+  --color-neutral-900: #0A0A0A;
+  --color-neutral-800: #111111;
+  --color-neutral-700: #1A1A1A;
+  --color-neutral-600: #222222;
+}
+
+body {
+  @apply bg-[#0A0A0A] text-[#E5E5E5] font-sans antialiased;
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
